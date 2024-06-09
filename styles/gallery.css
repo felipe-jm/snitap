@@ -113,3 +113,15 @@ section.gallery {
     transform: translateY(100%);
   }
 }
+
+@media (width <= 80em) {
+  section.gallery {
+    padding: 2.5rem 0.5rem;
+
+    & .content {
+      grid-template-areas: 
+      "A"
+      "B";
+    }
+  }
+}

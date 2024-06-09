@@ -37,7 +37,7 @@ section.hero {
   & h1 span {
     display: block;
 
-    animation: slideUp 5s 2s infinite ease;
+    animation: slideUp 3s 2s infinite ease;
   }
 
   /* buttons */
@@ -222,5 +222,19 @@ section.hero {
 
   100% {
     transform: translateY(-15rem);
+  }
+}
+
+@media (width <= 80em) {
+  section.hero {
+    flex-direction: column-reverse;
+
+    & .buttons {
+      flex-direction: column-reverse;
+    }
+
+    & > div:nth-child(2){
+      height: 25.5rem;
+    }
   }
 }
